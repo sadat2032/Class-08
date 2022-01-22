@@ -1,0 +1,49 @@
+*{max-width: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+
+}
+body{
+    font-family: sans-serif;
+}
+nav{
+    background-color: aquamarine;
+   
+}
+nav ul{
+    list-style-type: none;
+
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{
+    padding: 20px;
+    display: inline-block;
+    test-decoration: none;
+    color: red;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all .4s linear;
+
+}nav ul li:hover > a{
+    background-color: rgb(218, 20, 20);
+    color: seashell;
+}
+nav ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    transition: all .4s linear;
+    opacity: 0;
+    visibility: hidden;
+    background-color: slategrey;
+}
+nav ul li:hover >ul{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}
